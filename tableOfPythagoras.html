@@ -1,0 +1,57 @@
+ <!DOCTYPE html>
+ <html lang="en">
+
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+         body {
+             font-family: sans-serif;
+             font-size: 14px;
+             text-align: center;
+         }
+
+         table {
+             min-width: 350px;
+             margin: 100px auto;
+         }
+
+         table,
+         td {
+             border: 1px solid #b9b1ac;
+             border-collapse: collapse;
+
+         }
+
+         td {
+             width: 30px;
+             height: 30px;
+         }
+     </style>
+ </head>
+
+ <body>
+     <h1> Таблица Пифагора</h1>
+     <table>
+         <script>
+             let col = 10;
+             let row = 10;
+             for (let r = 1; r < row; r++) {
+                 document.write('<tr>');
+
+                 for (let c = 1; c < col; c++) {
+
+
+                     document.write(`<td>${r*c}</td>`);
+
+                 }
+
+                 document.write('</tr>');
+             }
+         </script>
+
+     </table>
+ </body>
+
+ </html>
